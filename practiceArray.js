@@ -100,12 +100,14 @@ console.log(`7. Heres the word concatenated to itself n number of times : ${conc
 
 
 let fullName = (firstName, lastName) => (firstName + ' ' + lastName);
-console.log(`8. Heres the Full Name : ${fullName('Min Ho', 'Lee')}`);
+console.log(`8. Heres the Full Name : ${fullName('MinHo', 'Lee')}`);
 
 //9.  Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
-//let arrayOfNumbers = [2,5,60];
-let arrayOfNumbers = [30, 25, 10, 40];
+let arrayOfNumbers = [2,5,60];
+//
+
+//let arrayOfNumbers = [30, 25, 10, 40];
 let sumOfNumbers = 0;
 let sumOfArrayNum = (NumbersArray) => {
     for (let i of NumbersArray) {
@@ -136,8 +138,8 @@ console.log(`10. Average of array numbers is:  ${avgOfArrayNum(newArrayOfNumbers
 
 //11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
-let arrayTwoArg = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9];
-let arrayOneArg = [11, 12, 13, 14, 15, 15, 16, 17, 18, 19];
+let arrayOneArg = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9];
+let arrayTwoArg = [11, 12, 13, 14, 15, 15, 16, 17, 18, 19];
 
 let avgOfFirstGreaterThanSecond = (arrayOneArg, arrayTwoArg) => {
     // Arrow function to calculate the average of first array.
@@ -171,11 +173,11 @@ let willBuyDrink = (isHotOutside, moneyInPocket) => {
     else
         return false;
 }
-console.log(`12. Is it hot outside and have money in pocket > 10.50: ${willBuyDrink(true, 1)}`);
+console.log(`12. Is it hot outside and have money in pocket > 10.50: ${willBuyDrink(true, 12)}`);
 
 //13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
-// I want to buy a dog if it doesnot shed and it is young.
+// I want to buy a dog if it doesnot shed and it is young. So I coded it in the following function to see if it meets my requirements.
 
 let BuyADog = (DoesnotShed, IsYoung) => {
     if (DoesnotShed && IsYoung)
@@ -183,7 +185,7 @@ let BuyADog = (DoesnotShed, IsYoung) => {
     else
         return false;
 }
-if (BuyADog(true && false) === true)
+if (BuyADog(true, false) === true)
     console.log('13. Please buy this dog');
 else
     console.log('13. Donot buy this dog');
